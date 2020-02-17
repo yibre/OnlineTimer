@@ -12,7 +12,7 @@
 .tabs__button {
     display: block;
     padding: 10px;
-    background : #cccccc;
+    background : #eeeeee;
     border : none;
     width : 100%;
     outline : none;
@@ -25,4 +25,26 @@
 
 .tabs__button:not(:last-of-type) {
     border-bottom: 1px solid #cccccc;
+}
+
+.tabs__button--active {
+    font-weight: bold;
+    border-right: 2px solid #009879;
+    background: #dddddd;
+}
+
+
+.tabs__content {
+    padding : 15px;
+    font-size : 0.8rem;
+    display: none;
+
+}
+
+.tabs__content--active {
+    display : block;
+}
+
+.tabs__content > :first-child {
+    margin-top : 0;
 }
