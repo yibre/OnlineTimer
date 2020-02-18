@@ -1,16 +1,17 @@
 .tabs {
-    border : 1px solid #cccccc;
-    display: flex;
+    // border : 15px solid #cccccc;
+    display: inline;
 }
 
 .tabs__sidebar{
-    width: 125px;
+    display: flex;
+    width: 70%;
     flex-shrink: 0;
     background: #cccccc;
 }
 
 .tabs__button {
-    display: block;
+    display: flex;
     padding: 10px;
     background : #eeeeee;
     border : none;
