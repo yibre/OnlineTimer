@@ -21,6 +21,11 @@
         <div class="tabs__content tabs__content--active" data-tab = "1">
             <h2>Online Timer</h2>
             <div class = "timer__table">
+                <input type = "number" id="goal__time--hours" name = "goalTime" min = "0" max = "24"> hours
+                <input type = "number" id="goal__time--minutes" name = "goalTime" min = "0" max = "59"> minutes
+                <input type = "number" id="goal__time--seconds" name = "goalTime" min = "0" max = "59"> seconds
+                <button class = "tab1__button" onclick = "countdown()">START</button>
+
                 <table class = "countdownContainer">
                     <tr class = "info">
                         <td colspan = "4">Christmas Countdown</td>
@@ -30,7 +35,6 @@
                         <td id ="hours">4</td>
                         <td id = "minutes">12</td>
                         <td id = "seconds">22</td>
-                        <!-- https://www.youtube.com/watch?time_continue=90&v=NJVJRFF-Y6U&feature=emb_logo -->
                     </tr>
                     <tr>
                         <td>Days</td>
@@ -40,7 +44,7 @@
                     </tr>
                 </table>
             </div>
-            <button class = "tab1__button" onclick = "countdown()">START</button>
+            
         </div>
         <div class="tabs__content" data-tab = "2">
             <h2>Stopwatch</h2>
