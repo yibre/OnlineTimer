@@ -6,6 +6,7 @@
     <link rel = "shortcut icon" href = "/assets/favicon.ico">-->
     <meta name = "viewpoint" content = "width=device-width, initial-scale = 1.0">
     <link rel = "stylesheet" href = "master.css">
+    <script type = "text/javascript" src = "mainJS.js"></script>
 </head>
 
 <body>
@@ -18,17 +19,37 @@
             <button class="tabs__button" data-for-tab = "4">Timer for TOEIC Speaking</button>
         </div>
         <div class="tabs__content tabs__content--active" data-tab = "1">
-            <h2>Tab #1</h2>
-            <p>
-                Lorem Ipsum // text in Tab 1
-            </p>
-            <button class = "tab1__button" timer-for-tab = "TIMER"></button>
+            <h2>Online Timer</h2>
+            <div class = "timer__table">
+                <table class = "countdownContainer">
+                    <tr class = "info">
+                        <td colspan = "4">Christmas Countdown</td>
+                    </tr>
+                    <tr class = "info">
+                        <td id = "days">120</td>
+                        <td id ="hours">4</td>
+                        <td id = "minutes">12</td>
+                        <td id = "seconds">22</td>
+                        <!-- https://www.youtube.com/watch?time_continue=90&v=NJVJRFF-Y6U&feature=emb_logo -->
+                    </tr>
+                    <tr>
+                        <td>Days</td>
+                        <td>Hours</td>
+                        <td>Minutes</td>
+                        <td>Seconds</td>
+                    </tr>
+                </table>
+            </div>
+            <button class = "tab1__button" onclick = "countdown()">START</button>
         </div>
         <div class="tabs__content" data-tab = "2">
-            <h2>Tab #2</h2>
-            <p>
-                Lorem ipsum // text in Tab 2
-            </p>
+            <h2>Stopwatch</h2>
+            <div class="container">
+                <div id = "display">00:00:00</div>
+                <div class = "buttons">
+                    <button id = "startStop" onclick = "startStop()">START</button> <button id="reset" onclick = "reset()">RESET</button>
+                </div>
+            </div>
         </div>
         <div class="tabs__content" data-tab = "3">
             <h2>Tab #3</h2>
