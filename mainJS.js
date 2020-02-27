@@ -1,4 +1,3 @@
-  
 //Define vars to hold time values
 let seconds = 0;
 let minutes = 0;
@@ -14,6 +13,12 @@ let interval = null;
 
 //Define var to hold stopwatch status
 let status = "stopped";
+
+
+// Define Value for Online Timer, tab 1
+let goal_time_Hours = 0;
+let goal_time_Seconds = 0;
+let goal_time_Minutes = 0;
 
 //Stopwatch function (logic to determine when to increment next value, etc.)
 function stopWatch(){
@@ -123,4 +128,11 @@ function countdown() {
     document.getElementById("seconds").textContent = s;
 
     setTimeout(countdown, 1000);
+}
+
+function getInputValue() {
+    goal_time_Hours = document.getElementById("goal__time--hours").value;
+    goal_time_Minutes = document.getElementById("goal__time--minutes").value;
+    goal_time_Seconds = document.getElementById("goal__time--seconds").value;
+    alert(goal_time_Hours + " " + goal_time_Minutes + " " + goal_time_Seconds);
 }
