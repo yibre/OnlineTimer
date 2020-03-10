@@ -105,6 +105,7 @@ function countdown() {
 
     let currentTime = now.getTime();
     let eventTime = eventDate.getTime();
+    console.log(eventTime);
 
     let remTime = eventTime - currentTime;
     let s = Math.floor(remTime/1000);
@@ -131,8 +132,13 @@ function countdown() {
 }
 
 function getInputValue() {
+    var i = 0;
+    i++
+    alert("this function was activated at "+ i);
     goal_time_Hours = document.getElementById("goal__time--hours").value;
     goal_time_Minutes = document.getElementById("goal__time--minutes").value;
     goal_time_Seconds = document.getElementById("goal__time--seconds").value;
     alert(goal_time_Hours + " " + goal_time_Minutes + " " + goal_time_Seconds);
+    countdown();
+
 }

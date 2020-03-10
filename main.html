@@ -25,6 +25,7 @@
                 <input type = "number" id="goal__time--minutes" name = "goalTime" min = "0" max = "59"> minutes
                 <input type = "number" id="goal__time--seconds" name = "goalTime" min = "0" max = "59"> seconds
                 <button class = "tab1__button" onclick = "getInputValue()">START</button>
+                <!-- TODO: make a stop button and if stop flag is on, stop the calling timer function-->
 
                 <table class = "countdownContainer">
                     <tr class = "info">
@@ -57,9 +58,20 @@
         </div>
         <div class="tabs__content" data-tab = "3">
             <h2>Tab #3</h2>
-            <p>
-                Lorem ipsum // text in Tab 3
-            </p>
+            <div class = "questions">
+                <p2>This is for Question</p2>
+            </div>
+            <div class = "timeout">
+                
+            </div>
+            <div class = "addingPrepareTime">
+                <button id = "part1">PART1</button>
+                <button id = "part2">PART2</button>
+                <button id = "part3">PART3</button>
+                <button id = "part4">PART4</button>
+                <button id = "part5">PART5</button>
+                <button id = "part6">PART6</button>
+            </div>
         </div>
         <div class = "tabs__content" data-tab = "4">
             <h2>Tab #4</h2>

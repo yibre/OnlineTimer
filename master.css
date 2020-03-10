@@ -39,7 +39,7 @@
     padding : 15px;
     font-size : 0.8rem;
     display: none;
-
+    background-color: blueviolet;
 }
 
 .tabs__content--active {
@@ -48,6 +48,7 @@
 
 .tabs__content > :first-child {
     margin-top : 0;
+    background-color: aquamarine;
 }
 
 /*stopwatch*/
@@ -84,4 +85,10 @@
 
 .info{
     font-size: 80px;
+}
+
+.questions{
+    padding-bottom: 30px;
+    text-align: center;
+    background: #009879;
 }
